@@ -11,3 +11,5 @@
 [OCRmyPDF](./OCRmyPDF.md)
 
 [开源阅读](./开源阅读.md)
+
+[vttToLrc.bat](./vttToLrc.md)
