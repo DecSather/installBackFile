@@ -4,13 +4,13 @@ setlocal EnableDelayedExpansion
 set b=":"
 set counter=0
 set c="^[0-9]*$"
-for %%f in (*.vtt) do (
+for %%f in (*.txt) do (
     echo Converting: %%f
     set "base_name=%%~nf"
-    set "base_name=!base_name:.vtt=!"
+    set "base_name=!base_name:.txt=!"
     set "lrc_file=!base_name!.lrc"
     echo. > "!lrc_file!"
-    for /f "tokens=* delims=" %%i in (%%f) do (
+    for /f "delims=" %%i in (%%f) do (
         echo "%%i"| findstr %b% >nul && (
             set ttt=%%i
             set counter=1
